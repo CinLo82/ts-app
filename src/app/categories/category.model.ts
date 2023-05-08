@@ -1,5 +1,6 @@
-export interface Category {
-  id: string | number;
+import { BaseModel } from "../base.model";
+
+export interface Category extends BaseModel {
   name: string;
 
 }
