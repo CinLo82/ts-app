@@ -1,5 +1,5 @@
 export interface BaseModel {
-  id: string | number;
-  createdAt: Date;
+  readonly id: string | number; //readonly lo que evita es que se puedan sobreescribir los datos.
+  readonly createdAt: Date;
   updatedAt: Date;
 }
