@@ -31,7 +31,7 @@ export const updateProduct = (id: Product['id'], changes: UpdateProductDto): Pro
   }
   return products[index];
 }
-
+s
 export const findProducts = (dto: FindProductDto): Product[] => {
 
   return products;
