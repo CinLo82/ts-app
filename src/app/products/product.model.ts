@@ -10,8 +10,9 @@ export interface Product extends BaseModel {
   stock: number;
   size?: Sizes;
   color: string;
-  price: number;
+  price: number | string;
   category: Category;
   isNew: boolean;
   tags: string[];
 }
+
