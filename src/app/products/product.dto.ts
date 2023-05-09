@@ -9,8 +9,11 @@ type example = Pick<Product, 'color' | 'description'>;
 
 
 export interface UpdateProductDto extends
-Partial<CreateProductDto> {
-
-}
+Partial<CreateProductDto> {}
 
 type example2 = Required<Product>; // deja todos los campos obligtorios
+
+export interface FindProductDto extends Readonly <Partial<Product>> {}
+
+type example3 = Readonly<Product>;
+
